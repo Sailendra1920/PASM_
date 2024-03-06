@@ -1,0 +1,14 @@
+_start
+	MOV A 12
+	MOV B 13
+	MOV C 0
+.data
+	MOV A 12
+_loop
+	PRINT %B
+	DEC &A
+	CMP C A
+	JNE _loop
+	HLT
+	
+	
