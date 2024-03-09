@@ -4,6 +4,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "tokens.h"
+#include "string.h"
 
 //Loader now tokenizes the source at load time
 //welcome : )

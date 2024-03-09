@@ -10,17 +10,6 @@
 
 Token * flatten_token_list(Node * n , Length_tracker * lt);
 
-bool isOpcode(char * s);
-
-bool isReg(char * s);
-
-bool isAddress(char * s);
-
-bool isDirective(char * s);
-
-bool isLabel(char * s);
-
-bool isData(char * s);
 
 
 

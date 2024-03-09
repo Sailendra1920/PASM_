@@ -84,21 +84,6 @@ bool isLabel(char * s){
 }
 
 
-bool isLiteral(char * s){
-
-  if(!isAddress(s) &&
-     !isReg(s) &&
-     !isOpcode(s) &&
-     !isDirective(s) &&
-     !isLabel(s)){
-    
-    return true;
-  }
-
-  return false;
-  
-}
-
 Token_type checker(char *s){
 
   if(isReg(s))
@@ -109,12 +94,10 @@ Token_type checker(char *s){
   return DIR;
   else if(isLabel(s))
   return LAB;
-  else if(isLiteral(s))
-  return DATA;
   else if(isOpcode(s))
   return OPCODE;
   else
-  return UNK;
+  return DATA;
 }
 
 Node * parsing( Node *head){
